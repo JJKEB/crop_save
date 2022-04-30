@@ -1,0 +1,25 @@
+{
+  "name": "crop_save",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJKEB/crop_save.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJKEB/crop_save/issues"
+  },
+  "homepage": "https://github.com/JJKEB/crop_save#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  }
+}
