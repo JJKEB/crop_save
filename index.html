@@ -5,23 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image crop and save</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" integrity="sha512-0SPWAwpC/17yYyZ/4HSllgaK7/gg9OlVozq8K7rf3J8LvCjYEEIfzzpnA2/SSjpGIunCSD18r3UhvDcu/xncWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js" integrity="sha512-ooSWpxJsiXe6t4+PPjCgYmVfr1NS5QXJACcR/FPpsdm6kqG1FmQ2SVyg2RXeVuCRBLr0lWHnWJP6Zs1Efvxzww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <link rel="stylesheet" href="./src/sass/style.scss">
   <script defer src="./src/js/index.js"></script>
 </head>
 <body>
 <div id="app">
+
   <div class="img_area">
-    <input type="file" name="" id="" hidden>
-
-    <div class="preview dropzone"></div>
-    <label for="input_profile">사진파일 등록</label>
-    <input type="file" name="" id="input_profile">
-
+    <div class="preview_wrap">
+      <div class="preview dropzone"></div>
+    </div>
+    <div>
+      <label for="input_profile">등록</label>
+      <input type="file" name="" id="input_profile">
+    </div>
     <div class="button_area">
       <button type="button" class="btn btn--trimming">트리밍하기</button>
       <button type="button" class="btn btn--apply">적용하기</button>
     </div>
   </div>
+  
 </div>
 </body>
 </html>

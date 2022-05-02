@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;  
+  box-sizing: border-box;
 }
 #app {
   display: flex;
@@ -10,12 +11,26 @@
   justify-content: center;
 }
 .img_area {
-
+  padding: 15px;
+}
+.preview_wrap {
+  max-width: 400px;
 }
 .preview {
-  width: 300px;
-  height: 300px;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  // height: 0;
+  // padding-top: 100%;
   background-color: #eee;
+  overflow: hidden;
+  img {
+    width: 100%;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+  }
 }
 .btn {
 
